@@ -6,19 +6,21 @@
 
 - Download the latest version at [Delete Order for Magento 2](https://commercemarketplace.adobe.com/md-module-delete-orders.html)
 
-### Method 2: Install via composer [Recommend]
+### Method 2: Upload via ZIP/Archive [Recommend]
 
 Run the following command in Magento 2 root folder
 
 ```
-composer require md_module/delete-orders
-
-php bin/magento maintenance:enable
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy
-php bin/magento maintenance:disable
-php bin/magento cache:flush
+Back up your store's database and web directory
+● Download the extension zip file and extract the zip file
+● Transfer the MD folder to the Magento 2 app/code/ directory on the server
+● Enable maintenance mode php bin/magento maintenance:enable
+● Run the command php bin/magento module:enable MD_DeleteOrders
+● Run the command php bin/magento setup:upgrade to install the extension
+● Run the command php bin/magento cache:clean to clean the cache
+● Disable maintenance mode php bin/magento maintenance:disable
+● Check the store environment if everything is working properly. If, at any point, the store
+displays an error, check the Magento logger for more details.
 ```
 
 ## 2. How to use
