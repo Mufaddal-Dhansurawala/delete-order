@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mi_delete_orders>
+            <general>
+                <enable_disable>0</enable_disable>
+                <shipment>0</shipment>
+                <invoice>0</invoice>
+                <creditmemo>0</creditmemo>
+            </general>
+        </mi_delete_orders>
+    </default>
+</config>

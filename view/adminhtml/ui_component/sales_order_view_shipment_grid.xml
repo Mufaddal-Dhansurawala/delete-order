@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="md_delete_shipments"
+                    class="MD\DeleteOrders\Ui\Component\Control\DeleteGridAction">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="deleteAction" xsi:type="string">deleteorder/shipment/massDelete</item>
+                    </item>
+                </argument>
+                <settings>
+                    <confirm>
+                        <message translate="true">Are you sure you want to delete selected Shipment(s)?</message>
+                        <title translate="true">Delete Shipments</title>
+                    </confirm>
+                    <type>delete_shipments</type>
+                    <label translate="true">Delete Shipments</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>
