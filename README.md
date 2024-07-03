@@ -15,12 +15,12 @@ Back up your store's database and web directory
 ● Download the extension zip file and extract the zip file
 ● Transfer the MD folder to the Magento 2 app/code/ directory on the server
 ● Enable maintenance mode php bin/magento maintenance:enable
-● Run the command php bin/magento module:enable MD_DeleteOrders
-● Run the command php bin/magento setup:upgrade to install the extension
-● Run the command php bin/magento cache:clean to clean the cache
+● Run the command php bin/magento module:enable **MD_DeleteOrders**
+● Run the command **php bin/magento setup:upgrade** to install the extension
+● Run the command **php bin/magento cache:clean** to clean the cache
 ● Disable maintenance mode php bin/magento maintenance:disable
 ● Check the store environment if everything is working properly. If, at any point, the store
-displays an error, check the Magento logger for more details.
+  displays an error, check the Magento logger for more details.
 ```
 
 ## 2. How to use
